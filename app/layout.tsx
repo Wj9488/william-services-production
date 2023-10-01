@@ -1,5 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import localFont from "next/font/local"
+
+const degularFont = localFont({ src: "./Fonts/Degular-Regular.woff"}) 
 
 export const metadata: Metadata = {
   title: 'william.services',
@@ -13,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="overflow-x-hidden">{children}</body>
+      <body className={`overflow-x-hidden ${degularFont.className}`}>{children}</body>
     </html>
   )
 }
