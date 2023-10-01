@@ -2,7 +2,9 @@
 
 
 @font-face {
-    src: url("/public/Fonts/Degular-Regular.otf");
+    /* src: url("/public/Fonts/Degular-Regular.otf"); */
+    src:  url('/public/Fonts/Degular-Regular.woff') format('woff'),
+        url('/public/Fonts/Degular-Regular.otf') format('otf');
     font-family: Degular;
     font-weight: normal;
   }
